@@ -44,6 +44,12 @@ responses:
   utter_ask_feedback:
     - text: "Thanks for your feedback. JG!"
 
+  utter_wrong_subject:
+    - text: "You have entered wrong subject name."
+
+  utter_wrong_ssn:
+    - text: "SSN should be only 6 digits."
+
   utter_goodbye:
     - text: "Bye"
 

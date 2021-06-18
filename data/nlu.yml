@@ -38,9 +38,9 @@ nlu:
       - Engg enquiry
       - admission enquiry for Engg
       - admission for Engg
-      - My name is [Hitesh](name) and wanted admission in Engg
+      - My name is [Hitesh](name) and admission in Engg
       - My name is [Trupti](name) and wanted admission in Engg
-      - My name is [Mukesh](name) and wanted admission in Engg
+      - My name is [Mukesh](name) and enquiry in Engg
       - Engg admission for [Vijay](name)
       - Engg admission for [John](name)
       - Engg admission for [Bill](name)
