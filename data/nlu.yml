@@ -1,0 +1,67 @@
+version: "2.0"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - good afternoon
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: admission_enquiry
+    examples: |
+      - I want admission in Engg
+      - Engg admission
+      - Engg enquiry
+      - admission enquiry for Engg
+      - admission for Engg
+      - My name is [Hitesh](name) and wanted admission in Engg
+      - My name is [Trupti](name) and wanted admission in Engg
+      - My name is [Mukesh](name) and wanted admission in Engg
+      - Engg admission for [Vijay](name)
+      - Engg admission for [John](name)
+      - Engg admission for [Bill](name)
+
+  - intent: name_entry
+    examples: |
+      - my name is [Hitesh](name) 
+      - myself [John](name)
+      - my name [Santosh](name)
+
+  - intent: ssn_entry
+    examples: |
+      - my ssn is [123456](ssn)
+      - my ssn no. is [23456](ssn)
+      - ssn is [34567](ssn)
+      - social security number is [45678](ssn)
+      - social security no is [56789](ssn)
+
+  - intent: subject_entry
+    examples: |
+      - my subject is [computers](subject) 
+      - subject is [mech](subject)
+      - my subject [it](subject)
+      - subject [space](subject)

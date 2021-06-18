@@ -1,0 +1,13 @@
+version: "2.0"
+
+stories:
+  - story: admission path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: admission_enquiry
+      - action: admission_form
+      - active_loop: admission_form
+      - active_loop: null
+      - action: utter_slot_values
+      - action: utter_ask_feedback

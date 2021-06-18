@@ -1,0 +1,52 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - admission_enquiry
+  - name_entry
+  - ssn_entry
+  - subject_entry
+
+entities:
+  - name
+  - ssn
+  - subject
+
+actions:
+  - admission_form
+
+slots:
+  name:
+    type: text
+  ssn:
+    type: text
+  subject:
+    type: text
+
+responses:
+  utter_greet:
+    - text: "Welcome to admission dept.! How can I help you?"
+
+  utter_ask_name:
+    - text: "Your name please?"
+  utter_ask_subject:
+    - text: "Which subject you want to take admission?"
+  utter_ask_ssn:
+    - text: "Please enter you social security number(ssn)?"
+
+  utter_submit:
+    - text: "All done!"
+
+  utter_slot_values:
+    - text: "I am going to take admission for these details 1.name: {name} 2.subject: {subject} 3.ssn: {ssn}."
+
+  utter_ask_feedback:
+    - text: "Thanks for your feedback. JG!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
